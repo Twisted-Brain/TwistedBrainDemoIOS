@@ -10,6 +10,7 @@ Export/
 *.n
 *.hl
 *.js.map
+/TB-graphics/
 
 # IDE files
 .vscode/

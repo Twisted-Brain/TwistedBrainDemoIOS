@@ -11,6 +11,6 @@
 	
 	<window width="800" height="600" fps="60" background="#000000" hardware="true" vsync="true" />
 	
-	<target name="mac" />
+	<target name="ios" />
 	
 </project>

@@ -1,18 +1,18 @@
-# TwistedBrain Demo
+# TwistedBrain Demo iOS
 
-A simple OpenFL Haxe demo application for macOS showcasing TwistedBrain graphics.
+A simple OpenFL Haxe demo application for iOS showcasing TwistedBrain graphics.
 
 ## Features
 
 - Interactive logo display with click-to-cycle functionality
 - Uses TwistedBrain logo assets (tb.png, tb_2.png, tb_3.png, tb_4.png, tb_5.png)
 - Clean, simple UI with welcome text and instructions
-- Built specifically for macOS target
+- Built specifically for iOS target
 
 ## Project Structure
 
 ```
-TwistedBrainDemo/
+TwistedBrainDemoIOS/
 ├── project.xml              # OpenFL project configuration
 ├── Source/
 │   └── TwistedBrainDemoMain.hx  # Main application class
@@ -23,9 +23,11 @@ TwistedBrainDemo/
 │   ├── tb_4.png
 │   └── tb_5.png
 └── Export/
-    └── macos/
-        └── bin/
-            └── TwistedBrainDemo.app  # Built macOS application
+    └── ios/
+        ├── TwistedBrainDemo.xcodeproj  # Xcode project
+        └── build/
+            └── Release-iphonesimulator/
+                └── TwistedBrainDemo.app  # Built iOS application
 ```
 
 ## Requirements
@@ -33,24 +35,27 @@ TwistedBrainDemo/
 - Haxe 4.3.7+
 - OpenFL 9.4.1+
 - Lime 8.2.2+
-- macOS development environment
+- iOS development environment (Xcode)
+- Apple Developer Account (for device deployment)
 
 ## Building
 
 1. Navigate to the project directory:
    ```bash
-   cd TwistedBrainDemo
+   cd TwistedBrainDemoIOS
    ```
 
-2. Build for macOS:
+2. Build for iOS:
    ```bash
-   haxelib run openfl build mac
+   haxelib run openfl build ios
    ```
 
-3. Run the application:
+3. Open in Xcode and run:
    ```bash
-   open Export/macos/bin/TwistedBrainDemo.app
+   open Export/ios/TwistedBrainDemo.xcodeproj
    ```
+
+4. Select iOS Simulator or connected device and press Play (▶️) in Xcode
 
 ## Usage
 
